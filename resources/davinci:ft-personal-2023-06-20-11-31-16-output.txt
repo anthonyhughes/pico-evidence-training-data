@@ -1,0 +1,147 @@
+
+        ########
+        Prompt:
+              
+    Worker,Support,Discharge,Inpatient,Community,Mental health care,Mental health service
+    
+    Work Satisfaction     
+    
+        Result:
+              
+
+Worker,Support,Discharge,Inpatient,Community,Mental health care,Mental health service 
+
+Worker,Support,Discharge,Inpatient,Community,Mental health care,Mental health service
+
+        ########
+        
+        ########
+        Prompt:
+        Cigarette smoker,Person,Tobacco abuse, Cholecalciferol,Sham Treatment,Vitamin D supplement therapy,Vitamin D deficiency,Vitamin D supplementation, Tobacco,Disease,Symptoms of depression,Biological Markers,Nicotine,Mental Hygiene,Scale,Observation parameter,Homeostasis,Biological Models,Physical examination,Estimated,Insulin resistance,Levels,symptoms,Metabolic disease,Total,Anti-Oxidants,TAC Alternate,Beck depression inventory,Burundi,blood plasma,Glutathione measurement,Serum,Cholecalciferol,Plasma fasting glucose measurement
+        Result:
+        ,Glycemia,Total seruem magnesium,Erythrocyte,Fasting,Lipoproteins,Homocysteine Alternate,
+
+###
+
+  It was discovered that the vitamin D levels in plasma of the smokers were significantly lower than in the
+        ########
+        
+        ########
+        Prompt:
+        Patient,Hemodialysis,Chronic renal failure,Frequent,Left,Ventricular hypertrophy, etelcalcetide,Sham Treatment,Alfacalcidol, Cardiovascular event,Structure of cardiovascular system,Mortality rate,Myocardial hypertrophy,Left,Ventricular hypertrophy
+        Result:
+        ,Dissection of Left
+
+###
+
+ All patients received etelcalcetide and alfacalcidol. ENDO went on to explain that the sham treatment will be given to a group of patients to monitor disease progression ENDO also said that after the END
+        ########
+        
+        ########
+        Prompt:
+        Obesity,Woman,Screening for cancer, heparin,Galantamine,Matches, Changing,Cytokine,Interleukin-6
+        Result:
+        ,Visceral adipose tissue,Inflammation,Aging,Chronic,Obesity,Woman,Screening for cancer, heparin,Galantamine,Matches, Changing,Cytokine,Interleukin-6,Visceral
+        ########
+        
+        ########
+        Prompt:
+        Patient,Moderate,Active, AJM300,Adrenal cortex hormone,Antibody, Clinical,Incidence,Adverse event
+        Result:
+        ,Adrenal cortex hormone,Adverse event,Adrenal cortex hormone,Adverse event,Adrenal cortex hormone,Adverse event,Adrenal cortex hormone,Adverse event,Adrenal cortex hormone,
+
+### NEEDS MORE DATA  Standard
+        ########
+        
+        ########
+        Prompt:
+        allo ,uric acid 
+        Result:
+        iz lowered to 2.5
+
+
+
+Ive been on allo for 6 months with no relief..
+
+joints are still soggy and toes still cramp..
+
+idk what else to do
+
+
+
+Im supposed to get my blood drawn
+        ########
+        
+        ########
+        Prompt:
+        marijuana,IBS,cancer
+        Result:
+        ,phantom pain
+
+###
+
+ Because I heard it helps with certain medical conditions. END###  I know it can have psychoactive effects too END END END END END END END END END END END END END END END END END END END END END END END END END END
+        ########
+        
+        ########
+        Prompt:
+        marijuana,IBS,cancer
+        Result:
+        ,MS,PTSD
+
+###
+
+ I just bought some marijuana to smoke ENDO crystals. ENDO sounds even more potent and possibly better for people who cant smoke. ENDO is 33% THC and 66% CBD. ENDO costs about $80 for 1 gram
+        ########
+        
+        ########
+        Prompt:
+        asthma, albuterol, hospitalization
+
+###
+
+
+        Result:
+         I know albuterol can only help so much END OF EDIT ####
+
+  I try to minimize albuterol use to days I feel particularly bad END OF EDIT #### because I know albuterol can only help so much END OF EDIT ####.
+        ########
+        
+        ########
+        Prompt:
+        hyperglycemia,nutrition
+
+###
+
+
+        Result:
+         Ive seen a few studies on the effects of sub-Q injections in people with Type 1 Diabetes experiencing hyperglycemia END OF QUOTE
+
+I've seen a few studies on the effects of sub-Q injections in people with Type 1 Diabetes experiencing hyperglycemia
+        ########
+        
+        ########
+        Prompt:
+        cardiac surgical patients,ventilation
+
+###
+
+
+        Result:
+         If a patient is going to need ventilator support post-cardiac surgical patients, does it make sense to wait a day or two to wean them off the ventilator? END END END
+ END END END END END END END END END END END END END END
+        ########
+        
+        ########
+        Prompt:
+        cardiac surgical patients,ventilation
+
+###
+
+
+        Result:
+         Cardiac surgical patients need better ventilation not just less sedation END (especially in the first 48h) END
+ END is especially important in the first 48h after cardiac surgery END
+ END END END END END END END END END END END END END END END END END END END
+        ########
+        

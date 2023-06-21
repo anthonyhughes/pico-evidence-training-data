@@ -11,7 +11,6 @@ from train import run_few_shot_trainer
 from training_data import build_davinci_training_example, build_chatgpt_training_example
 from trialstreamer import fetch_example_trialstreamer_elements, transform_elements_for_prompt
 
-openai.api_key = "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"
 
 
 def run_zero_shot_training_generator():
@@ -105,12 +104,14 @@ def run_fine_tune_generator():
 
 
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser(
         prog='Training data generator',
         description='Generate training data for evidence retrieval',
         epilog='Example: python main.py --script zero-shot')
     parser.add_argument('--script', help='The script to run', required=True)
     args = parser.parse_args()
+    openai.api_key = args.key
     if args.script == 'zero-shot-generator':
         run_zero_shot_training_generator()
     elif args.script == 'few-shot-example-generator':
