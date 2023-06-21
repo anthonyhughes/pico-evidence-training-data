@@ -1,0 +1,145 @@
+
+        ########
+        Prompt:
+        
+    This is an example of personal medical post from social media:
+    Psychosis (as its described now) doesnt really exist
+If you think about it, everyone lives in a sort-of psychosis, because most things in society are imaginative constructs. A professor in a twead coat, with a cane and a monocle, playing with the role and the demeanor of being the most-learned person while his students as servile subjects gaze up at him, supposing him an academic lord he is psychotic.
+
+A prime minister playing king, a therapist posturing as a mans great counselor. These altered states of mind and social roles are nothing more than imaginations, not so severe as a mentally-ill person on a sleepless, 3-day bender with mania but nevertheless.
+
+Also, if you feel youre being watched, you may be: post-9/11, there are cameras everywhere
+    Medical abstract:
+    Coronary artery calcification (CAC) develops early in the pathogenesis of atherosclerosis and is a strong and independent predictor of cardiovascular disease (CVD). Arterial calcification is caused by an imbalance in calcification regulatory mechanisms. An important inhibitor of calcification is vitamin K-dependent matrix Gla protein (MGP). Both preclinical and clinical studies have shown that inhibition of the vitamin K-cycle by vitamin K antagonists (VKA) results in elevated uncarboxylated MGP (ucMGP) and subsequently in extensive arterial calcification. This led us to hypothesize that vitamin K supplementation may slow down the progression of calcification. To test this, we designed the VitaK-CAC trial which analyses effects of menaquinone-7 (MK-7) supplementation on progression of CAC. The trial is a double-blind, randomized, placebo-controlled trial including patients with coronary artery disease (CAD). Patients with a baseline Agatston CAC-score between 50 and 400 will be randomized to an intervention-group (360 microgram MK-7) or a placebo group. Treatment duration will be 24 months. The primary endpoint is the difference in CAC-score progression between both groups. Secondary endpoints include changes in arterial structure and function, and associations with biomarkers. We hypothesize that treatment with MK-7 will slow down or arrest the progression of CAC and that this trial may lead to a treatment option for vascular calcification and subsequent CVD.
+    Populations: 
+    Patients,Scores (qualifier value),Four hundred,Coronary Artery Disease
+    Interventions:
+    placebo,menaquinone 7,Vitamin K antagonists,Vitamin K measurement (procedure)
+    Outcomes:
+    Scores (qualifier value),Progression (attribute),State changes,Arteries,function,Association,Biological Markers,Vascular Calcinosis 
+    Using this information, write a short personal medical claim written by a reddit or twitter user.
+    Include alternative names for the medical concepts. Include spelling and grammatical mistakes, and use colloquial language.     
+    
+        Result:
+        
+I'm really curious about this VitaK-CAC trial! They're testing out if Vitamin K can help slow down arterial calcification for patients with Coronary Arteries Disease. I heard it can even help with Vascular Necrosis. It's so cool
+        ########
+        
+        ########
+        Prompt:
+        
+    This is an example of personal medical post from social media:
+    Just redness or butterfly rash?
+
+    Medical abstract:
+    BACKGROUND
+
+
+A cluster randomised trial of mHealth and participatory learning and action (PLA) community mobilisation interventions showed that PLA significantly reduced the prevalence of intermediate hyperglycaemia and type 2 diabetes mellitus (T2DM) and the incidence of T2DM among adults in rural Bangladesh; mHealth improved knowledge but showed no effect on glycaemic outcomes. We explore the equity of intervention reach and impact.
+METHODS
+
+
+Intervention reach and primary outcomes of intermediate hyperglycaemia and T2DM were assessed through interview surveys and blood fasting glucose and 2-hour oral glucose tolerance tests among population-based samples of adults aged ≥30 years. Age-stratified, gender-stratified and wealth-stratified intervention effects were estimated using random effects logistic regression.
+RESULTS
+
+
+PLA participants were similar to non-participants, though female participants were younger and more likely to be married than female non-participants. Differences including age, education, wealth and marital status were observed between individuals exposed and those not exposed to the mHealth intervention.PLA reduced the prevalence of T2DM and intermediate hyperglycaemia in all age, gender and wealth strata. Reductions in 2-year incidence of T2DM of at least 51% (0.49, 95% CI 0.26 to 0.92) were observed in all strata except among the oldest and least poor groups. mHealth impact on glycaemic outcomes was observed only among the youngest group, where a 47% reduction in the 2-year incidence of T2DM was observed (0.53, 95% CI 0.28 to 1.00).
+CONCLUSION
+
+
+Large impacts of PLA across all strata indicate a highly effective and equitable intervention. mHealth may be more suitable for targeting higher risk, younger populations.
+TRIAL REGISTRATION NUMBER
+
+
+ISRCTN41083256.
+    Populations: 
+    Control Groups,Type 2,Intermediate,Hyperglycemia,Bangladesh,Population,Alkali,Specimen,Adult,Age,year
+    Interventions:
+    Education,Action,Community,Mobilization,mHealth,Procedure
+    Outcomes:
+    Interviews as Topic,Surveys,Fasting blood glucose measurement,2 hours,Oral Glucose Tolerance,Result,Prevalence,Type 2 diabetes mellitus,Intermediate,Hyperglycemia,Age,Education,Marital status,year,Incidence 
+    Using this information, write a short personal medical claim written by a reddit or twitter user.
+    Include alternative names for the medical concepts. Include spelling and grammatical mistakes, and use colloquial language.     
+    
+        Result:
+        
+ 
+"OMG I'm so scared. I think I have intermediet hyperglycemia. I keep feeling fatigued nd my skin is really red. I heard they have something in Bangladesh that helped reduce the chance of getting Type 2 diabetes...butter
+        ########
+        
+        ########
+        Prompt:
+        
+    This is an example of personal medical post from social media:
+    Psychosis and memory
+Has anyone felt worse memory after an episode?
+
+Even forgetting how to do some things you already knew and some mental processes
+    Medical abstract:
+    Objective
+
+
+Psychological consequences of myocardial infarction (MI) are substantial, as 4% of all MI patients develop posttraumatic stress disorder (PTSD) and 12% clinically relevant posttraumatic stress symptoms (PTSS). The study investigated the course and development within 12 months of MI-induced PTSS to gain novel insights in potentially delayed response to early trauma-focused counseling aimed at preventing the incidence of MI-induced PTSS.
+Methods
+
+
+In the MI-SPRINT two-group randomized controlled trial, 190 MI-patients were randomly allocated to receive a single-session intervention of either trauma-focused counseling or an active control intervention targeting the general role of stress in patients with heart disease. Blind interviewer-rated PTSS (primary outcome) and additional health outcomes were assessed at 12-month follow-up.
+Results
+
+
+12-month follow-up of outcomes were available for 106 (55.8%) of 190 participants: In the entire sample, one patient (0·5%, 1/190) who received trauma-focused counseling developed full PTSD. There was no significant difference between trauma-focused counseling and stress counseling regarding total score of interviewer-rated PTSS ( p  > 0.05). The only group difference emerged in terms of more severe hyperarousal symptoms in the trauma-focused counseling group in the ITT analysis, but not in the completer analysis.
+Conclusions
+
+
+No benefits were found for trauma-focused counseling after 12 months when compared with an active control intervention. PTSD prevalence in the present study was low highlighting a potential beneficial effect of both interventions. Further studies are needed to determine the most accurate approach of counseling.
+    Populations: 
+    Patient,Heart disease,Myocardial infarction,Posttraumatic stress disorder,Symptoms of stress,190,Entire,Specimen,Injuries, Wounds,Ocular accommodation,Counseling
+    Interventions:
+    Myocardial infarction,Induced,Symptoms of stress,Early,Psychological counseling,Single person,Procedure,Injuries, Wounds,Ocular accommodation,Counseling,Active,Control Groups
+    Outcomes:
+    Health,Result,Severe,Hyperarousal,symptoms,Injuries, Wounds,Ocular accommodation,Counseling,Stress counseling,Total,Score,Interviewers,Rattus norvegicus,Symptoms of stress 
+    Using this information, write a short personal medical claim written by a reddit or twitter user.
+    Include alternative names for the medical concepts. Include spelling and grammatical mistakes, and use colloquial language.     
+    
+        Result:
+        
+I just had a heart attack and now I'm having problems with memory and I can't even remember how to do stuff I already knew how to do. Does anyone else experienced this after an MI or PTSD? I'm already getting some psychological counseling and am thinking about getting some
+        ########
+        
+        ########
+        Prompt:
+        
+    This is an example of personal medical post from social media:
+    [deleted by user]
+[removed]
+    Medical abstract:
+    INTRODUCTION
+
+
+A journal club (JC) is a commonly used medical educational tool. Videoconferencing technology can facilitate the delivery of JCs, however, there remains no evidence on the role of web-based virtual JCs in promoting the acquisition and retention of medical knowledge. The Web-Ed trial aims to evaluate the educational benefits, feasibility and acceptability of web-based virtual JCs compared with traditional face-to-face ones.
+METHODS AND ANALYSIS
+
+
+Web-Ed is a multicentre pragmatic parallel-group randomised trial across teaching hospitals within the UK National Health Service (NHS). We will enrol qualified doctors or medical students who are >18 years old, proficient in English and able to use online videoconferencing software. Block randomisation will be used to allocate participants in 1:1 ratio to either intervention group. Both groups will be presented with the same educational material and follow a standardised JC structure hosted by nominated moderators and medical faculty members.The primary outcome is the difference in participants' knowledge acquisition and retention 7 days after the JCs evaluated using standardised multiple-choice questions. We will report secondarily on the feasibility and acceptability of the JCs using Likert scale questionnaires. Assuming a 30% drop-out rate, we aim to enrol 75 participants to detect a 20% improvement in knowledge acquisition at 80% power and 5% significance. We will report using mean difference or risk ratio with 95% CIs and assess significance using parametric/non-parametric testing. Where relevant, we will adjust for predetermined characteristics (age, grade of training and session duration) using multivariate regression analyses.
+ETHICS AND DISSEMINATION
+
+
+Web-Ed was designed by doctors in training to address their learning needs and evaluate the preferred mode of learning. The trial results will be published in peer-reviewed journals and presented at relevant scientific conferences. The trial has been approved by the NHS Health Regulation Authority (21/HRA/3361).
+TRIAL REGISTRATION NUMBER
+
+
+ISRCTN18036769.
+    Populations: 
+    Physician,Medical student,year,Old,Proficient in English,Ability,utilization,Videoconferencing,Software,Education,Hospitals,National Health Services
+    Interventions:
+    Technology,World Wide Web,Alkali,Journals as Topic,Clubbing,Promotion,Medical Education
+    Outcomes:
+    Education,Acceptability,Retention (Psychology),Daily,Numerous,Choice Behavior 
+    Using this information, write a short personal medical claim written by a reddit or twitter user.
+    Include alternative names for the medical concepts. Include spelling and grammatical mistakes, and use colloquial language.     
+    
+        Result:
+        
+"Trying out this new #videoconferencing technology for them c-in-c JCs at the #NHS! Hoping this'll help my med education & retainment of knowledge. #MedEd #DoctorsLife #NHSLife #Online
+        ########
+        
