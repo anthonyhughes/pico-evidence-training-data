@@ -7,10 +7,8 @@ import openai
 from llm import fetch_available_models
 from prompt import build_prompt, build_prompt_for_fine_tuned_model
 from redhot import fetch_example_post, clean_post_for_prompt, run_prompt_completion_pair_generator
-from train import run_few_shot_trainer
 from training_data import build_davinci_training_example, build_chatgpt_training_example
 from trialstreamer import fetch_example_trialstreamer_elements, transform_elements_for_prompt
-
 
 
 def run_zero_shot_training_generator():
@@ -116,8 +114,6 @@ if __name__ == '__main__':
         run_zero_shot_training_generator()
     elif args.script == 'few-shot-example-generator':
         run_automated_few_shot_training_generator()
-    elif args.script == 'few-shot-train':
-        run_few_shot_trainer()
     elif args.script == 'fine-tune-generator':
         run_fine_tune_generator()
     elif args.script == 'list-models':
