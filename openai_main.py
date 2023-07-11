@@ -1,5 +1,6 @@
 import argparse
 import json
+from pprint import pprint
 
 import pandas as pd
 import openai
@@ -102,7 +103,6 @@ def run_fine_tune_generator():
 
 
 if __name__ == '__main__':
-
     parser = argparse.ArgumentParser(
         prog='Training data generator',
         description='Generate training data for evidence retrieval',

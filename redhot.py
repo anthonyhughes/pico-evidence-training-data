@@ -1,7 +1,8 @@
 import json
 from typing import List, Dict
-
+from datasets import load_dataset
 import pandas as pd
+from transformers.pipelines.base import Dataset
 
 SUBREDDIT_ID_TO_POPULATION = {
     "t5_2rtve": "lupus",
@@ -143,3 +144,15 @@ def run_prompt_completion_pair_generator(
                                                     category=for_viewing['subreddit_id'],
                                                     text=for_viewing['text'],
                                                     spans=all_spans_for_viewing)
+
+
+def check_example_dataset():
+    data = load_dataset("timdettmers/openassistant-guanaco")
+    print(data)
+
+
+def prep_hf_dataset() -> Dataset:
+    dataset = load_dataset("json", data_files="resources/fine_tune_data.jsonl", split="train")
+    print(dataset)
+    print(dataset["prompt"][0], dataset["completion"][0])
+    return dataset
