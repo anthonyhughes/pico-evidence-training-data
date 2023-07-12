@@ -152,6 +152,7 @@ def check_example_dataset():
 
 
 def prep_hf_dataset() -> Dataset:
+    print('Running dataset generator')
     dataset = load_dataset("json", data_files="resources/fine_tune_data.jsonl", split="train")
     print(dataset)
     print(dataset["prompt"][0], dataset["completion"][0])

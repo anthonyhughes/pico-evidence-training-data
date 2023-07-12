@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Falcon Main - Generate Sequence ",
+            "type": "python",
+            "request": "launch",
+            "program": "falcon_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--script",
+                "generate-example-sequence"
+            ]
+        },
+        {
+            "name": "Python: Falcon Main - Run Train",
+            "type": "python",
+            "request": "launch",
+            "program": "falcon_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--script",
+                "train"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1,2,3",
+            }
+        }
+    ]
+}
