@@ -20,10 +20,30 @@ def create_prompt(input: str = "I've read that the gaps diet can heal things lik
     print(prompt)
     return prompt
 
-def create_prompt_for_training(question: str, answer: str) -> str:
+def create_prompt_for_training(prompt: str, completion: str) -> str:
     prompt = f"""
-<doctor>: Tell me about your issues with {question}
-<patient>: {answer}
+<doctor>: Tell me about your issues with {prompt}
+<patient>: {completion}
 """
     print(prompt)
     return prompt
+
+def create_prompt_for_training_V2(prompt: str, completion: str) -> str:
+    prompt = f"""
+<doctor>: Tell me about your issues with {prompt}
+<patient>: {completion}
+"""
+    print(prompt)
+    return prompt
+
+
+def add_new_column(df, col_name, col_values):
+    # Define a function to add the new column
+    def create_column(updated_df):
+        updated_df[col_name] = col_values  # Assign specific values
+        return updated_df
+
+    # Apply the function to each item in the dataset
+    df = df.map(create_column)
+
+    return df

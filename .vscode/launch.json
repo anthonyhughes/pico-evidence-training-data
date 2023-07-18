@@ -4,8 +4,9 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    
         {
-            "name": "Python: Falcon Main - Generate Sequence ",
+            "name": "Falcon - Generate Sequence ",
             "type": "python",
             "request": "launch",
             "program": "falcon_main.py",
@@ -17,7 +18,7 @@
             ]
         },
         {
-            "name": "Python: Falcon Main - Run Train",
+            "name": "Falcon - Run Train",
             "type": "python",
             "request": "launch",
             "program": "falcon_main.py",
@@ -30,6 +31,21 @@
             "env": {
                 "CUDA_VISIBLE_DEVICES": "1,2,3",
             }
-        }
+        },
+        {
+            "name": "Falcon - Run Inference on Fintuned",
+            "type": "python",
+            "request": "launch",
+            "program": "falcon_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--script",
+                "inference-finetuned"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1,2,3",
+            }
+        }        
     ]
 }

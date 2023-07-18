@@ -8,3 +8,4 @@ scipy==1.11.0
 xformers==0.0.20
 datasets==2.13.1
 pandas==2.0.3
+trl[peft]==0.4.7

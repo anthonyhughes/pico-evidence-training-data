@@ -151,9 +151,8 @@ def check_example_dataset():
     print(data)
 
 
-def prep_hf_dataset() -> Dataset:
+def prep_hf_dataset() -> Dataset: # type: ignore
     print('Running dataset generator')
-    dataset = load_dataset("json", data_files="resources/fine_tune_data.jsonl", split="train")
+    dataset = load_dataset("json", data_files="resources/fine_tune_data.jsonl")
     print(dataset)
-    print(dataset["prompt"][0], dataset["completion"][0])
     return dataset
