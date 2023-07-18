@@ -1,6 +1,6 @@
 from transformers import AutoModelForCausalLM
 
-def print_parameters(model: AutoModelForCausalLM) -> None:
+def print_parameters(model) -> None:
     trainable_parameters = 0
     all_parameters = 0
     for _, parameter in model.named_parameters():
