@@ -160,3 +160,4 @@ cython_debug/
 .idea/
 redhot_corpora/
 *.jsonl
+redhot_data/

@@ -3,8 +3,36 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
-    
+    "configurations": [    
+        {
+            "name": "Corpus - Gen Training Data",
+            "type": "python",
+            "request": "launch",
+            "program": "redhot_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--script",
+                "generate-example-sequence"
+            ]
+        },
+        {
+            "name": "RedHOT - Get Missing Data",
+            "type": "python",
+            "request": "launch",
+            "program": "resources/redhot_data/extraction_script.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                // "--script", "generate-example-sequence",
+                "--client_id", "8VDGw_wWfBdRFn23E_2x-g",
+                "--client_secret", "XXu8Rg2s4BJCCRQdZkBAraq4h6_c1Q",
+                "--username", "anthonyhughes",
+                "--password", "1Sk8ing?",
+                "--user_agent", "redhot_scraper",
+                "--file_path", "resources/redhot_data/st2_complete_release_missing_text.csv",
+            ]
+        },
         {
             "name": "Falcon - Generate Sequence ",
             "type": "python",

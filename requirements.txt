@@ -9,3 +9,4 @@ xformers==0.0.20
 datasets==2.13.1
 pandas==2.0.3
 trl[peft]==0.4.7
+praw==7.7.1
