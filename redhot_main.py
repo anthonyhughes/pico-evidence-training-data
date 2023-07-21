@@ -1,43 +1,62 @@
 import pandas as pd
 
+from redhot import get_all_spans, build_prompt_completion_pairs_from_spans
+
 
 def update_existing_dataset_with_text():
     """
     Run the few shot training example generator
     :return:
     """
-    all_pico_entries = pd.read_csv("resources/redhot_data/st2_complete_release.csv")
+    all_pico_entries = pd.read_csv(
+        "resources/redhot_data/st2_complete_release_missing_text_inc_text.csv"
+    )
     all_pico_entries_w_text_train = pd.read_csv(
         "resources/redhot_data/old/st2_train_inc_text_.csv"
-    )
-    all_pico_entries_w_text_test = pd.read_csv(
-        "resources/redhot_data/old/st2_test_inc_text_.csv"
     )
 
     # concatenate the train and test dataframes
     all_pico_entries_w_text = pd.concat(
-        [all_pico_entries_w_text_train, all_pico_entries_w_text_test]
+        [all_pico_entries_w_text_train, all_pico_entries]
     )
 
-    # list all post_id values that are in both dataframes
-    post_ids = list(
-        set(all_pico_entries["post_id"].values).intersection(
-            set(all_pico_entries_w_text["post_id"].values)
-        )
+    print(
+        "Total {} post ids in for transformation".format(len(all_pico_entries_w_text))
     )
-    print("Found {} post ids in both dataframes".format(len(post_ids)))
-    # list all post_id values not in both dataframes
-    post_ids_not_in_both = list(
-        set(all_pico_entries["post_id"].values).symmetric_difference(
-            set(all_pico_entries_w_text["post_id"].values)
-        )
-    )
-    print("Found {} post ids not in both dataframes".format(len(post_ids_not_in_both)))
 
-    # save all pico entries to file where the row contains post_ids_not_in_both
-    all_pico_entries[
-        all_pico_entries["post_id"].isin(post_ids_not_in_both)
-    ].to_csv("resources/redhot_data/st2_complete_release_missing_text.csv", index=False)
+    final_claims = []
+
+    # for each post id, find the corresponding text
+    for post_id in all_pico_entries_w_text["post_id"].values:
+        # get the text for the post id
+        text = all_pico_entries_w_text.query(f'post_id == "{post_id}"')["text"].values[
+            0
+        ]
+
+        claim = all_pico_entries_w_text.query(f'post_id == "{post_id}"')[
+            "claim"
+        ].values[0]
+
+        annotations = all_pico_entries_w_text.query(f'post_id == "{post_id}"')[
+            "stage2_labels"
+        ].values[0]
+
+        parsed_annotations = get_all_spans(annotations)
+
+        prompts = build_prompt_completion_pairs_from_spans(
+            post_id, category="", text=text, spans=parsed_annotations
+        )
+
+        prompt = " and ".join([prompts[key]["text"] for key in prompts.keys()])
+
+        if prompt == "" or prompt.startswith("[deleted") or "by user]" in prompt:
+            continue
+
+        final_claims.append({"pico_elements": prompt.strip(), "claim": claim.strip()})
+
+    final_claims = pd.DataFrame(final_claims)
+    final_claims.to_csv("resources/redhot_data/claims_for_finetuning.csv", index=False)
+
 
 if __name__ == "__main__":
     update_existing_dataset_with_text()
