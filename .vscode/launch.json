@@ -17,6 +17,30 @@
             ]
         },
         {
+            "name": "Trialstreamer - Gen Example Data",
+            "type": "python",
+            "request": "launch",
+            "program": "trialstreamer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--script",
+                "example-trialstreamer-extract"
+            ]
+        },
+        {
+            "name": "Trialstreamer - Gen Inference Data",
+            "type": "python",
+            "request": "launch",
+            "program": "trialstreamer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--script",
+                "full-trialstreamer-extract"
+            ]
+        },
+        {
             "name": "RedHOT - Get Missing Data",
             "type": "python",
             "request": "launch",

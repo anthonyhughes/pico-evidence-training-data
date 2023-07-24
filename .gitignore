@@ -161,3 +161,4 @@ cython_debug/
 redhot_corpora/
 *.jsonl
 redhot_data/
+resources/trialstreamer/publications/
