@@ -17,10 +17,14 @@ EXCLUSION_LIST = [
     "Total",
     "Containing",
     "Early",
-    "Method"
+    "Method",
+    "Year",
+    "Year ",
+    "Behind",
 ]
 
 LOWER_CASE_LIST = [e.lower() for e in EXCLUSION_LIST]
+
 
 def fetch_example_trialstreamer_elements(
     csv_location: str = "resources/trialstreamer/trialstreamer-update-pubmed-2022-06-20.csv",
@@ -57,10 +61,10 @@ def fetch_trialstreamer_elements(
                 row["interventions_mesh"],
                 row["outcomes_mesh"],
                 row["pmid"],
-                row["ab"]
+                row["ab"],
             )
         )
-    return frame_elements 
+    return frame_elements
 
 
 def contains_digit(input: str) -> bool:
@@ -84,33 +88,41 @@ def replace_double_quotes_within_word(input_str):
 
 
 def transform_list(
-    tlist: str, limit: int = 5, abstract_id: str = "", separator: str = " and "
+    tlist: str,
+    limit: int = 1,
+    abstract_id: str = "",
+    separator: str = " and ",
+    target_concept: int = 0,
 ) -> str:
     """
     Transform a list of elements into a comma separated string
+    @param tlist: the list of elements
+    @param limit: the number of elements to return
+    @param abstract_id: the abstract id
+    @param separator: the separator to use
+    @param target_concept: the target concept to use
     """
     try:
         try:
             es = json.loads(tlist.replace("'", '"'))
         except json.decoder.JSONDecodeError as e:
             try:
-                # Replace single quotes around keys with double quotes                
+                # Replace single quotes around keys with double quotes
                 tlist = replace_double_quotes_within_word(tlist)
                 es = json.loads(tlist)
             except json.decoder.JSONDecodeError as e:
                 # print(f"JSONDecodeError for abstract {abstract_id}")
                 # print(tlist)
                 # print(replace_double_quotes_within_word(tlist))
-                return ""               
+                return ""
         # filter any elements without a cui_str
         es = filter(lambda x: "cui_str" in x, es)
         # extract all cui_str values only
         es = [e["cui_str"] for e in es]
-        # filter certain generic concepts
-        es = filter(lambda x: x not in EXCLUSION_LIST, es)
-        es = filter(lambda x: x not in LOWER_CASE_LIST, es)
         # strip any trailing whitespace
-        es = [e.strip().lower() for e in es]
+        es = [e.strip() for e in es]
+        # lower any words
+        es = [e.lower() for e in es]
         # remove any content in brackets
         es = [e.split("(")[0] for e in es]
         # filter any digits (used to represent patient participant count)
@@ -120,8 +132,19 @@ def transform_list(
         es = filter(lambda x: len(x.split(" ")) <= 3, es)
         # filter qualifier values (used to represent the mesurements of the outcome)
         es = filter(lambda x: "(qualifier value)" not in x, es)
+        # filter any concepts that contain a dash
+        es = filter(lambda x: "-" not in x, es)
+        # filter certain generic concepts
+        # strip any trailing whitespace
+        es = [e.strip() for e in es]
+        # lower any words
+        es = [e.lower() for e in es]
+        es = filter(lambda x: x not in EXCLUSION_LIST, es)
+        es = filter(lambda x: x not in LOWER_CASE_LIST, es)
 
-        es = list(es)[:limit]
+        # filter any concepts that are not the target concept
+        es = list(es)
+        es = es[target_concept : target_concept + limit]
         return f"{separator}".join(es)
     except KeyError as e:
         print(f"KeyError for abstract {abstract_id}")
@@ -132,9 +155,9 @@ def transform_elements_for_prompt(elements: Tuple) -> Tuple:
     # print("Transforming elements for prompt")
     abstract_id = elements[3]
     return (
-        transform_list(elements[0], 2, abstract_id),
-        transform_list(elements[1], 2, abstract_id),
-        transform_list(elements[2], 2, abstract_id),
+        transform_list(tlist=elements[0], target_concept=1, abstract_id=abstract_id),
+        transform_list(tlist=elements[1], target_concept=1, abstract_id=abstract_id),
+        transform_list(tlist=elements[2], target_concept=1, abstract_id=abstract_id),
         abstract_id,
     )
 
@@ -165,8 +188,8 @@ if __name__ == "__main__":
             all_elements.extend(elements)
             id_to_abstract = [(el[3], el[4]) for el in document_data]
             all_abstracts.extend(id_to_abstract)
-            print(f"Total elements: {len(elements)}")        
-            print(f"Current total elements: {len(all_elements)}")        
+            print(f"Total elements: {len(elements)}")
+            print(f"Current total elements: {len(all_elements)}")
         final_df = pd.DataFrame(
             all_elements,
             columns=["population", "intervention", "outcome", "pmid"],
